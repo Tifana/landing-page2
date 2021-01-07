@@ -1,2 +1,58 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="wrapper-home">
+  <div class="container">
+    <div class="d-md-none">
+      <div class="banner-home">
+        <%= image_tag "pic.jpg", alt: "Tifana", width: 200, class:"avatar" %>
+        <div class="banner-home-content">
+          <h1>Tifana Rosa</h1>
+          <h2>Full Stack developer</h2>
+        </div>
+      </div>
+
+      <div class="links-home">
+        <%= link_to 'My portfolio', '/portfolio' %>
+        <%= link_to 'My resume', '/resume' %>
+        <%= link_to 'About me', '/about-me' %>
+      </div>
+
+      <div class="row mx-3 mb-3 fixed-bottom">
+        <div class="offset-sm-4 col-sm-4 d-flex justify-content-between bigger-font">
+          <a href="https://www.linkedin.com/in/tifana-rosa-20096a1b7/" target="_blank"><i class="fab fa-linkedin ab-link-white"></i></a>
+          <a href="https://github.com/Tifana" target="_blank"><i class="fab fa-github-square ab-link-white"></i></a>
+          <a href="mailto:tifanarosa@gmail.com" target="_blank"><i class="fas fa-envelope-square ab-link-white"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-md-block">
+      <div class="big-home d-flex justify-content-between align-items-center">
+        <div>
+          <%= image_tag "pic.jpg", alt: "Tifana", width: 400, class:"avatar" %>
+          <div class="title">
+            <h1>Tifana Rosa</h1>
+            <h2>Full Stack developer</h2>
+          </div>
+        </div>
+        
+        <div class="w-50 text-center banner-home-content">
+          <div class="w-100 links-home">
+            <%= link_to 'My portfolio', '/portfolio', class: "btn btn-ghost" %>
+            <%= link_to 'My resume', '/resume', class: "btn btn-ghost" %>
+            <%= link_to 'About me', '/about-me', class: "btn btn-ghost" %>
+          </div>
+          
+          <p>I graduated from Le Wagon in December 2018 and have been ever since continuously improving and learning new programming languages as well as working on web projects.</p>
+          <p class="mb-5">Find out here more about me and my past experience:</p>
+          <div class="row mx-3 mt-5">
+            <div class="offset-sm-4 col-sm-4 d-flex justify-content-between bigger-font">
+              <a href="https://www.linkedin.com/in/tifana-rosa-20096a1b7/" target="_blank"><i class="fab fa-linkedin ab-link-white"></i></a>
+              <a href="https://github.com/Tifana" target="_blank"><i class="fab fa-github-square ab-link-white"></i></a>
+              <a href="mailto:tifanarosa@gmail.com" target="_blank"><i class="fas fa-envelope-square ab-link-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
